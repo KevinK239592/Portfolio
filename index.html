@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
     <title>My Portfolio | Kevin</title>
-</head>
+  </head>
 
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="" class="active" style="--i:1">Home</a>
-            <a href="" style="--i:2">About</a>
-            <a href="" style="--i:3">Education</a>
-            <a href="" style="--i:4">Skills</a>
-            <a href="" style="--i:5">Project</a>
-            <a href="" style="--i:6">Contact</a>
-        </nav>
-    </header>
+  <body>
+    <nav class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <div class="navbar">
+        <a href="#home" style="--i: 1">Home</a>
+        <a href="" style="--i: 2">About</a>
+        <a href="" style="--i: 3">Education</a>
+        <a href="" style="--i: 4">Skills</a>
+        <a href="" style="--i: 5">Project</a>
+        <a href="" style="--i: 6">Contact</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="burger-menu"
+          ><img src="img/burger-menu.svg" style="width: 30px; height: 30px"
+        /></a>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="hero-container">
+    <section id="home">
+      <div class="hero-container">
         <div class="info-side">
-            <h3 class="part-1">Hello, It's Me</h3>
-            <span class="blur"></span>
-            <h1>Kevin</h1>
-            <span class="blur"></span>
-            <h3 class="part-2">and I'm a <span id="typing-text"></span></h3>
-            <p>
-                Hello, my name is Kevin Kurniawan Handoko. I'm an Informatics Engineering student at Catur Insan Cendekia University,
-                Cirebon. I have particular interest in web design and development.
-            </p>
-            <!-- Social Media -->
-            <a href="#"><i class="uil uil-instagram" style="--i:7"></i></a>
-            <a href="https://github.com/KevinK239592" target="_blank"><i class="uil uil-github" style="--i:8"></i></a>
-            <a href=""><i class="uil uil-linkedin" style="--i:9"></i></a>
-            <a href=""><i class="uil uil-twitter" style="--i:10"></i></a>
-            <br />
-            <button class="btn" id="downloadBtn">Download CV</button>
+          <h3 class="part-1">Hello, It's Me</h3>
+          <span class="blur"></span>
+          <h1>Kevin</h1>
+          <span class="blur"></span>
+          <h3 class="part-2">and I'm a <span id="typing-text"></span></h3>
+          <p>
+            Hello, my name is Kevin Kurniawan Handoko. I'm an Informatics
+            Engineering student at Catur Insan Cendekia University, Cirebon. I
+            have particular interest in web design and development.
+          </p>
+          <!-- Social Media -->
+          <a href="#"><i class="uil uil-instagram" style="--i: 7"></i></a>
+          <a href="https://github.com/KevinK239592" target="_blank"
+            ><i class="uil uil-github" style="--i: 8"></i
+          ></a>
+          <a href=""><i class="uil uil-linkedin" style="--i: 9"></i></a>
+          <a href=""><i class="uil uil-twitter" style="--i: 10"></i></a>
+          <br />
+          <button class="btn" id="downloadBtn">Download CV</button>
         </div>
 
         <div class="hero-image">
-            <img src="img/kevin.jpg">
+          <img src="img/kevin.jpg" />
         </div>
-    </div>
+      </div>
+    </section>
+
     <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

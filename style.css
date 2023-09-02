@@ -1,251 +1,343 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1f242d;
-    color: white;
+  background-color: #1f242d;
+  color: white;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10%;
+  z-index: 9999;
 }
 
 .logo {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 27px;
-    cursor: default;
-    animation: slideLeft 1s ease forwards;
-    opacity: 0;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 27px;
+  cursor: default;
+  animation: slideLeft 1s ease forwards;
+  opacity: 0;
 }
 
 .navbar a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 0px 16px;
-    font-weight: 600;
-    transition: 0.3s all;
-    animation: navMenu 1s ease forwards;
-    animation-delay:  calc(0.2s * var(--i));
-    opacity: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0px 16px;
+  font-weight: 600;
+  transition: 0.3s all;
+  animation: navMenu 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #0ef;
+.navbar a:hover {
+  color: #0ef;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  border-bottom: 0.1rem solid #fff;
+  transform: scaleX(0);
+}
+
+.navbar a:hover::after {
+  transform: scaleX(0.5);
+  transition: 0.2s linear;
+}
+
+#burger-menu {
+  display: none;
+  border: none;
 }
 
 /* Hero Section */
 
 .hero-container {
-    display: flex;
-    padding: 25px 10%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding: 25px 10%;
+  justify-content: center;
+  align-items: center;
 }
 
 .blur {
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #1d4ed8;
-    z-index: -100;
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: -100;
 }
 
 .info-side h3 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 10px 0;
-    letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: 1px;
 }
 
 .info-side h1 {
-    font-size: 75px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    animation: slideRight 0.5s ease forwards;
-    opacity: 0;
-    animation-delay: 1s;
+  font-size: 75px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  animation: slideRight 0.5s ease forwards;
+  opacity: 0;
+  animation-delay: 1s;
 }
 
 .info-side h3 span {
-    color: #0ef;
+  color: #0ef;
 }
 
 .part-1 {
-    animation: part1 1s ease forwards;
-    opacity: 0;
+  animation: part1 1s ease forwards;
+  opacity: 0;
 }
 
 .part-2 {
-    animation: part2 1s ease forwards;
-    opacity: 0;
+  animation: part2 1s ease forwards;
+  opacity: 0;
 }
 
 p {
-    line-height: 27px;
-    margin: 20px 0px 40px 0px;
-    animation: slideLeftP 1s ease forwards;
-    opacity: 0;
-    animation-delay: 1.2s;
+  line-height: 27px;
+  margin: 20px 0px 40px 0px;
+  animation: slideLeftP 1s ease forwards;
+  opacity: 0;
+  animation-delay: 1.2s;
 }
 
 .hero-image img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin-left: 3rem;
-    animation: zoomIn 1s ease forwards;
-    animation-delay: 1s;
-    opacity: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-left: 3rem;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 i {
-    position: relative;
-    border: 2px solid #0ef;
-    padding: 10px;
-    border-radius: 50%;
-    color: #0ef;
-    margin: 0px 8px;
-    transition: 0.3s;
-    animation: socialMedia 1s ease forwards;
-    animation-delay: calc(0.2s * var(--i));
-    opacity: 0;
+  position: relative;
+  border: 2px solid #0ef;
+  padding: 10px;
+  border-radius: 50%;
+  color: #0ef;
+  margin: 0px 8px;
+  transition: 0.3s;
+  animation: socialMedia 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+  opacity: 0;
 }
 
 i:hover {
-    box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px #0ef;
 }
 
 button {
-    background-color: #0ef;
-    margin-top: 50px;
-    padding: 20px 70px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: .3s;
-    box-shadow: none;
-    animation: button 1s ease forwards;
-    animation-delay: 1.5s;
-    opacity: 0;
+  background-color: #0ef;
+  margin-top: 50px;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: none;
+  animation: button 1s ease forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
 button:hover {
-    box-shadow: 0 0 15px #0ef;
-    color: white;
+  box-shadow: 0 0 15px #0ef;
+  color: white;
 }
 
 /* ========> Animation <======== */
 
 @keyframes slideLeft {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes navMenu {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes part1 {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes part2 {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideLeftP {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes socialMedia {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes button {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes zoomIn {
-    0% {
-        transform: scale(0);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===> Media Queries <===*/
+
+/* Dekstop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Handphone */
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+
+  #burger-menu {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    right: -100%;
+    background-color: blue;
+    width: 25rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    color: #000;
+    display: block;
+    margin: 3rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  #home .hero-container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .blur {
+    position: relative;
+  }
+
+  .info-side h1 {
+    font-size: 37px;
+  }
+
+  .info-side h3 {
+    font-size: 15px;
+  }
+
+  .hero-image img {
+    height: 200px;
+    width: 200px;
+    object-position: center;
+    z-index: -9999;
+  }
+
+  button {
+    margin-top: 40px;
+  }
 }
