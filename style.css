@@ -127,6 +127,7 @@ body {
 .info-side p {
   line-height: 27px;
   margin: 20px 0px 40px 0px;
+  text-align: justify;
   animation: slideLeftP 1s ease forwards;
   opacity: 0;
   animation-delay: 1.2s;
@@ -289,6 +290,7 @@ button:hover {
   padding: 25px 10%;
   margin: 20px 0px;
   background-color: #323946;
+  min-height: 100vh;
 }
 
 .about-img img {
@@ -297,12 +299,22 @@ button:hover {
 }
 
 .heading {
-  text-align: center;
+  text-align: left;
   font-size: 60px;
+}
+
+.heading span {
+  color: #0ef;
 }
 
 .about-content h3 {
   font-size: 1.6rem;
+}
+
+.about-content p {
+  line-height: 27px;
+  text-align: justify;
+  margin: 2rem 0 1rem;
 }
 
 /* ===> Media Queries <===*/
@@ -327,25 +339,27 @@ button:hover {
     font-size: 55%;
   }
 
+  /* Navbar */
   #burger-menu {
     display: inline-block;
   }
 
   .header {
     padding: 10px;
-    background-color: red;
   }
 
-  .navbar {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .header .navbar {
     position: absolute;
-    top: 8%;
-    right: -65%;
-    background-color: blue;
+    top: 100%;
+    right: -100%;
     width: 25rem;
-    height: 95vh;
-    transition: 0.5s;
-    z-index: 1;
-    display: none;
+    height: 100vh;
+    transition: 0.3s;
+    background-color: #1d4ed8;
   }
 
   .header .navbar.active {
@@ -353,33 +367,52 @@ button:hover {
   }
 
   .navbar a {
-    color: #000;
+    color: white;
     display: block;
     margin: 3rem;
     padding: 0.5rem;
     font-size: 2rem;
   }
 
+  .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  /* Hero Section */
   #home .hero-container {
     flex-wrap: wrap-reverse;
-    padding: 15px;
+    padding: 15px 7%;
   }
 
   .blur {
     position: relative;
   }
 
+  .info-side {
+    margin-top: 3rem;
+  }
+
   .info-side h1 {
-    font-size: 37px;
+    font-size: 36px;
   }
 
   .info-side h3 {
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  .info-side p,
+  .about-content p {
+    line-height: 18px;
+    font-size: 12px;
   }
 
   .hero-image img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     object-position: center;
   }
 
@@ -389,16 +422,28 @@ button:hover {
     justify-content: center;
     margin-top: 40px;
     font-size: 1rem;
-    height: 50px;
+    height: 20px;
     width: 50px;
   }
 
-  /* .about-img img {
-    display: none;
+  /* About Section */
+  .about {
+    flex-wrap: wrap;
+    padding: 15px 7%;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .about-img img {
+    height: 300px;
+    width: 300px;
+    object-position: center;
+    margin-top: 7rem;
   }
 
   .about-content h3 {
-    font-size: 1.6rem;
-    display: none;
-  } */
+    font-size: 16px;
+  }
 }
