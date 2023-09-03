@@ -14,11 +14,12 @@
   </head>
 
   <body>
+    <!-- Navbar Start -->
     <nav class="header">
       <a href="#" class="logo">Portfolio</a>
       <div class="navbar">
         <a href="#home" style="--i: 1">Home</a>
-        <a href="" style="--i: 2">About</a>
+        <a href="#about" style="--i: 2">About</a>
         <a href="" style="--i: 3">Education</a>
         <a href="" style="--i: 4">Skills</a>
         <a href="" style="--i: 5">Project</a>
@@ -30,10 +31,11 @@
         /></a>
       </div>
     </nav>
+    <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <section id="home">
-      <div class="hero-container">
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="hero-container">
         <div class="info-side">
           <h3 class="part-1">Hello, It's Me</h3>
           <span class="blur"></span>
@@ -53,14 +55,35 @@
           <a href=""><i class="uil uil-linkedin" style="--i: 9"></i></a>
           <a href=""><i class="uil uil-twitter" style="--i: 10"></i></a>
           <br />
+          <span class="blur"></span>
           <button class="btn" id="downloadBtn">Download CV</button>
+          <span class="blur"></span>
         </div>
 
         <div class="hero-image">
           <img src="img/kevin.jpg" />
         </div>
+      </main>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/kevin.jpg" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Web Programmer</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+          eligendi reiciendis qui a vel neque, obcaecati aliquam autem? Quo
+          veniam, doloremque cumque laudantium itaque dolorem.
+        </p>
       </div>
     </section>
+    <!-- About Section End -->
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

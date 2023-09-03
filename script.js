@@ -3,6 +3,7 @@ var typed = new Typed("#typing-text", {
   strings: ["Programmer", "Front-End Developer", "Web Designer"],
   typeSpeed: 50,
   backSpeed: 50,
+  backDelay: 1000,
   loop: true,
 });
 

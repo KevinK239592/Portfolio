@@ -5,9 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
-
-html {
+  outline: none;
+  border: none;
+  text-decoration: none;
   scroll-behavior: smooth;
 }
 
@@ -19,6 +19,12 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 25px 10%;
   z-index: 9999;
 }
@@ -67,12 +73,19 @@ body {
 }
 
 /* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
 .hero-container {
   display: flex;
   padding: 25px 10%;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .blur {
@@ -111,7 +124,7 @@ body {
   opacity: 0;
 }
 
-p {
+.info-side p {
   line-height: 27px;
   margin: 20px 0px 40px 0px;
   animation: slideLeftP 1s ease forwards;
@@ -154,7 +167,7 @@ button {
   border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.1s;
   box-shadow: none;
   animation: button 1s ease forwards;
   animation-delay: 1.5s;
@@ -267,6 +280,31 @@ button:hover {
   }
 }
 
+/* ===> About Section <=== */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 25px 10%;
+  margin: 20px 0px;
+  background-color: #323946;
+}
+
+.about-img img {
+  width: 400px;
+  height: 400px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+}
+
+.about-content h3 {
+  font-size: 1.6rem;
+}
+
 /* ===> Media Queries <===*/
 
 /* Dekstop */
@@ -293,13 +331,21 @@ button:hover {
     display: inline-block;
   }
 
-  .header .navbar {
+  .header {
+    padding: 10px;
+    background-color: red;
+  }
+
+  .navbar {
     position: absolute;
-    right: -100%;
+    top: 8%;
+    right: -65%;
     background-color: blue;
     width: 25rem;
-    height: 100vh;
-    transition: 0.3s;
+    height: 95vh;
+    transition: 0.5s;
+    z-index: 1;
+    display: none;
   }
 
   .header .navbar.active {
@@ -316,6 +362,7 @@ button:hover {
 
   #home .hero-container {
     flex-wrap: wrap-reverse;
+    padding: 15px;
   }
 
   .blur {
@@ -334,10 +381,24 @@ button:hover {
     height: 200px;
     width: 200px;
     object-position: center;
-    z-index: -9999;
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
+    font-size: 1rem;
+    height: 50px;
+    width: 50px;
   }
+
+  /* .about-img img {
+    display: none;
+  }
+
+  .about-content h3 {
+    font-size: 1.6rem;
+    display: none;
+  } */
 }
