@@ -317,6 +317,109 @@ button:hover {
   margin: 2rem 0 1rem;
 }
 
+/* ===> Education Section <=== */
+.education {
+  gap: 2rem;
+  padding: 25px 10%;
+  margin: 20px 0px;
+  background-color: #1f242d;
+  min-height: 100vh;
+}
+
+.education .heading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.education .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.edu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 320px;
+}
+
+.edu-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.edu-card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: #323946;
+  color: white;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.card-logo {
+  background-color: #fff;
+  height: 160px;
+}
+
+.front-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: rgb(235, 235, 235);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.back-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 10px;
+}
+
+#map {
+  font-size: 28px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+#map:hover {
+  box-shadow: none;
+}
+
 /* ===> Media Queries <===*/
 
 /* Dekstop */
