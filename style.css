@@ -380,6 +380,11 @@ button:hover {
   height: 160px;
 }
 
+.card-logo img {
+  width: 250px;
+  height: 150px;
+}
+
 .front-content {
   padding: 15px;
   text-align: center;
@@ -549,5 +554,26 @@ button:hover {
 
   .about-content h3 {
     font-size: 16px;
+  }
+
+  /* Education Section */
+  .edu-container {
+    width: 230px;
+    height: 280px;
+  }
+
+  .card-logo img {
+    width: 230px;
+    height: 150px;
+  }
+
+  .front-content {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .back-content {
+    line-height: 24px;
   }
 }
