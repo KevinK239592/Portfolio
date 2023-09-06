@@ -486,6 +486,10 @@ button:hover {
   margin-left: 2.5rem;
 }
 
+#arrow-icon {
+  font-size: 25px;
+}
+
 .wrapper.active .skill-card.hard {
   transform: translateY(-450px);
 }
@@ -510,6 +514,11 @@ button:hover {
   color: #0ef;
   cursor: pointer;
   font-size: 16px;
+}
+
+.softBtn-link:hover,
+.hardBtn-link:hover {
+  text-decoration: underline;
 }
 
 /* ===> Media Queries <===*/
