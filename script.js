@@ -43,3 +43,16 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
+
+// Skill Card Slide Animation
+const softBtnLink = document.querySelector(".softBtn-link");
+const hardBtnLink = document.querySelector(".hardBtn-link");
+const wrapper = document.querySelector(".wrapper");
+
+hardBtnLink.addEventListener("click", () => {
+  wrapper.classList.toggle("active");
+});
+
+softBtnLink.addEventListener("click", () => {
+  wrapper.classList.toggle("active");
+});

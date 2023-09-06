@@ -70,7 +70,6 @@ body {
 
 #burger-menu {
   display: none;
-  border: none;
 }
 
 /* Hero Section */
@@ -144,7 +143,7 @@ body {
   opacity: 0;
 }
 
-i {
+#social-media-icon {
   position: relative;
   border: 2px solid #0ef;
   padding: 10px;
@@ -157,7 +156,7 @@ i {
   opacity: 0;
 }
 
-i:hover {
+#social-media-icon:hover {
   box-shadow: 0 0 20px #0ef;
 }
 
@@ -424,6 +423,86 @@ button:hover {
 
 #map:hover {
   box-shadow: none;
+}
+
+/* ===> Skills Section <=== */
+.skills {
+  gap: 2rem;
+  padding: 25px 10%;
+  margin: 20px 0px;
+  background-color: #323946;
+  min-height: 100vh;
+}
+
+.skills .heading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.skill-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #1f242d;
+  border: 2px solid #0ef;
+  padding: 40px;
+  border-radius: 0px 30px 0px 30px;
+  overflow: hidden;
+}
+
+.skill-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
+
+.skill-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Membagi menjadi dua kolom dengan lebar yang sama */
+  gap: 1rem 3rem;
+}
+
+.wrapper.active .skill-card.hard {
+  transform: translateY(-450px);
+}
+
+.wrapper .skill-card.soft {
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+
+.wrapper.active .skill-card.soft {
+  transform: translateY(-450px);
+}
+
+.detail {
+  margin-top: 3rem;
+}
+
+.softBtn-link {
+  color: #0ef;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 /* ===> Media Queries <===*/

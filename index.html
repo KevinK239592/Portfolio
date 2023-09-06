@@ -21,9 +21,9 @@
         <a href="#home" style="--i: 1">Home</a>
         <a href="#about" style="--i: 2">About</a>
         <a href="#education" style="--i: 3">Education</a>
-        <a href="#" style="--i: 4">Skills</a>
-        <a href="#" style="--i: 5">Project</a>
-        <a href="#" style="--i: 6">Contact</a>
+        <a href="#skills" style="--i: 4">Skills</a>
+        <a href="#projects" style="--i: 5">Projects</a>
+        <a href="#contact" style="--i: 6">Contact</a>
       </div>
       <div class="navbar-extra">
         <a href="#" id="burger-menu"
@@ -52,13 +52,29 @@
           <!-- Social Media -->
           <a
             href="https://www.instagram.com/kevejaa1/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg"
-            ><i class="uil uil-instagram" style="--i: 7"></i
+            ><i
+              class="uil uil-instagram"
+              id="social-media-icon"
+              style="--i: 7"
+            ></i
           ></a>
           <a href="https://github.com/KevinK239592" target="_blank"
-            ><i class="uil uil-github" style="--i: 8"></i
+            ><i class="uil uil-github" id="social-media-icon" style="--i: 8"></i
           ></a>
-          <a href=""><i class="uil uil-linkedin" style="--i: 9"></i></a>
-          <a href=""><i class="uil uil-twitter" style="--i: 10"></i></a>
+          <a href=""
+            ><i
+              class="uil uil-linkedin"
+              id="social-media-icon"
+              style="--i: 9"
+            ></i
+          ></a>
+          <a href=""
+            ><i
+              class="uil uil-twitter"
+              id="social-media-icon"
+              style="--i: 10"
+            ></i
+          ></a>
           <br />
           <button class="btn" id="downloadBtn">Download CV</button>
         </div>
@@ -158,6 +174,65 @@
       </div>
     </section>
     <!-- Education Section End -->
+
+    <!-- Skills Section Start -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="skill-content">
+        <div class="wrapper">
+          <div class="skill-card hard">
+            <div class="skill-container">
+              <div class="skill-title">
+                <h2>Technical Skills</h2>
+              </div>
+              <div class="skill-list">
+                <div class="front-end">
+                  <h3>Front-End</h3>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <div class="back-end">
+                  <h3>Back-End</h3>
+                  <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySql</li>
+                  </ul>
+                </div>
+                <div class="design">
+                  <h3>Design</h3>
+                  <ul>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="detail">
+                <p>
+                  <a class="softBtn-link"
+                    >See Soft Skill <i class="uil uil-arrow-circle-down"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card soft">
+            <h2>soft skill</h2>
+            <br /><br />
+            <div class="detail">
+              <p>
+                <a class="hardBtn-link">Close</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
