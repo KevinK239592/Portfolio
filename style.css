@@ -296,6 +296,7 @@ button:hover {
 .about-img img {
   width: 400px;
   height: 400px;
+  border-radius: 30px;
 }
 
 .heading {
@@ -437,7 +438,7 @@ button:hover {
 .skills .heading {
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .skill-content {
@@ -449,7 +450,7 @@ button:hover {
 .wrapper {
   position: relative;
   width: 400px;
-  height: 400px;
+  height: 450px;
   background: #1f242d;
   border: 2px solid #0ef;
   padding: 40px;
@@ -481,6 +482,10 @@ button:hover {
   gap: 1rem 3rem;
 }
 
+.skill-list .left {
+  margin-left: 2.5rem;
+}
+
 .wrapper.active .skill-card.hard {
   transform: translateY(-450px);
 }
@@ -496,11 +501,12 @@ button:hover {
 }
 
 .detail {
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
-.softBtn-link {
+.softBtn-link,
+.hardBtn-link {
   color: #0ef;
   cursor: pointer;
   font-size: 16px;
@@ -629,7 +635,6 @@ button:hover {
   .about-img img {
     height: 300px;
     width: 300px;
-    border-radius: 30px;
     object-position: center;
     margin-top: 7rem;
   }
@@ -657,5 +662,37 @@ button:hover {
 
   .back-content {
     line-height: 24px;
+  }
+
+  /* Skills Section */
+  .skills .heading {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+
+  .skill-title {
+    font-size: 16px;
+  }
+
+  .skill-list {
+    font-size: 14px;
+    gap: 3rem 4rem;
+  }
+
+  .skill-list .left {
+    margin-left: 2rem;
+  }
+
+  .skill-card.soft .skill-container .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    line-height: 36px;
+  }
+
+  .detail {
+    margin-top: 3rem;
   }
 }
