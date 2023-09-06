@@ -487,7 +487,7 @@ button:hover {
 }
 
 #arrow-icon {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .wrapper.active .skill-card.hard {
@@ -688,8 +688,8 @@ button:hover {
     gap: 3rem 4rem;
   }
 
-  .skill-list .left {
-    margin-left: 2rem;
+  .skill-list .right {
+    margin-right: 36px;
   }
 
   .skill-card.soft .skill-container .skill-list {
