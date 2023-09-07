@@ -546,7 +546,7 @@ button:hover {
 .project-container .project-box {
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 0 1rem black;
+  box-shadow: 0 20px 20px black;
   overflow: hidden;
   display: flex;
   height: 200px;
@@ -613,7 +613,7 @@ button:hover {
   gap: 2rem;
   padding: 25px 10%;
   margin: 20px 0px;
-  background-color: #1f242d;
+  background-color: #323946;
   min-height: 100vh;
 }
 
@@ -679,6 +679,7 @@ button:hover {
     margin: 3rem;
     padding: 0.5rem;
     font-size: 2rem;
+    font-weight: 500;
   }
 
   .navbar-nav a::after {
@@ -755,6 +756,10 @@ button:hover {
   }
 
   /* Education Section */
+  .education .heading {
+    margin-top: 5rem;
+  }
+
   .edu-container {
     width: 230px;
     height: 280px;
@@ -778,11 +783,15 @@ button:hover {
   /* Skills Section */
   .skills .heading {
     margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .wrapper {
+    height: 550px;
   }
 
   .skill-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .skill-list {
@@ -803,7 +812,36 @@ button:hover {
     line-height: 36px;
   }
 
+  .wrapper.active .skill-card.hard {
+    transform: translateY(-550px);
+  }
+
+  .wrapper .skill-card.soft {
+    position: absolute;
+    top: 550px;
+    left: 0;
+  }
+
+  .wrapper.active .skill-card.soft {
+    transform: translateY(-550px);
+  }
+
   .detail {
+    margin-top: 5rem;
+  }
+
+  /* Project Section */
+  .projects .heading {
+    margin-top: 5rem;
+  }
+
+  .project-container {
     margin-top: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-container .project-box {
+    width: 280px;
+    height: 180px;
   }
 }
