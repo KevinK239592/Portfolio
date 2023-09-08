@@ -623,6 +623,77 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+.contact form {
+  max-width: 600px;
+  max-height: 600px;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background: #222222;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.sendBtn {
+  margin-top: 1rem;
+  padding: 15px 30px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+/* ===> Footer <=== */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 7%;
+  background: #1f242d;
+}
+
+.footer-text p {
+  font-size: 16px;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: #0ef;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem #0ef;
+}
+
+.footer-iconTop a i {
+  font-size: 18px;
+  color: #1f242d;
+}
+
 /* ===> Media Queries <===*/
 
 /* Dekstop */
@@ -843,5 +914,24 @@ button:hover {
   .project-container .project-box {
     width: 280px;
     height: 180px;
+  }
+
+  /* Contact Section */
+  .contact .heading {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+
+  .contact form .input-box input,
+  .contact form textarea {
+    font-size: 14px;
+  }
+
+  .sendBtn {
+    padding: 20px 70px;
   }
 }
