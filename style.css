@@ -767,7 +767,7 @@ button:hover {
   }
 
   .info-side {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .info-side h1 {
@@ -787,7 +787,12 @@ button:hover {
   .hero-image img {
     height: 250px;
     width: 250px;
+    margin-top: 3rem;
     object-position: center;
+  }
+
+  #social-media-icon {
+    font-size: 16px;
   }
 
   button {
