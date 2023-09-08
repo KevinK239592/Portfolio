@@ -603,11 +603,6 @@ button:hover {
   border-radius: 50%;
 }
 
-.project-layer a i {
-  font-size: 10rem;
-  color: black;
-}
-
 /* ===> Contact Section <=== */
 .contact {
   gap: 2rem;
@@ -933,5 +928,10 @@ button:hover {
 
   .sendBtn {
     padding: 20px 70px;
+  }
+
+  /* Footer */
+  .footer-text p {
+    font-size: 14px;
   }
 }
