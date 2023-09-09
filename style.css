@@ -867,7 +867,7 @@ button:hover {
   }
 
   .skill-list .right {
-    margin-right: 28px;
+    margin-right: 22px;
   }
 
   .skill-card.soft .skill-container .skill-list {
@@ -933,18 +933,12 @@ button:hover {
 
   /* Footer */
   .footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 15px;
+    flex-direction: column-reverse;
+    padding: 0px 10px 15px;
   }
 
   .footer-text p {
     font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .footer-iconTop {
-    display: flex;
-    justify-content: right;
+    margin-top: 2rem;
   }
 }
