@@ -44,7 +44,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// Skill Card Slide Animation
+// === Skill Card Slide Animation ===
 const softBtnLink = document.querySelector(".softBtn-link");
 const hardBtnLink = document.querySelector(".hardBtn-link");
 const wrapper = document.querySelector(".wrapper");
