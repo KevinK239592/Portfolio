@@ -16,6 +16,7 @@ body {
   color: white;
 }
 
+/* ===> Navbar <=== */
 .header {
   display: flex;
   justify-content: space-between;
@@ -72,7 +73,7 @@ body {
   display: none;
 }
 
-/* Hero Section */
+/* ===> Hero Section <=== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -684,11 +685,6 @@ button:hover {
   box-shadow: 0 0 1rem #0ef;
 }
 
-.footer-iconTop a i {
-  font-size: 18px;
-  color: #1f242d;
-}
-
 /* ===> Media Queries <===*/
 
 /* Dekstop */
@@ -936,7 +932,19 @@ button:hover {
   }
 
   /* Footer */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+  }
+
   .footer-text p {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footer-iconTop {
+    display: flex;
+    justify-content: right;
   }
 }
