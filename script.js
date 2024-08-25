@@ -56,3 +56,6 @@ hardBtnLink.addEventListener("click", () => {
 softBtnLink.addEventListener("click", () => {
   wrapper.classList.toggle("active");
 });
+
+// === Footer Year Auto Update ===
+document.getElementById("current-year").textContent = new Date().getFullYear();
