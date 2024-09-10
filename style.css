@@ -784,6 +784,7 @@ button:hover {
     height: 250px;
     width: 250px;
     margin-top: 3rem;
+    margin-left: 0;
     object-position: center;
   }
 
